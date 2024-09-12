@@ -1,0 +1,243 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  p {
+    line-height: 1.5;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Updated CSS for Smaller Logo */
+  .logo img {
+    height: 50%; /* Adjust this size as needed */
+    width: 50%;  /* Keeps the aspect ratio intact */
+  }
+  
+  /* Header and Navigation */
+  
+  /* Top Header Style */
+  .top-header {
+    background-color: #00063f; /* Slightly darker shade of blue */
+    padding: 1rem 5rem 0;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    font-size: 0.75rem; /* Scaled using rem */
+  }
+  
+  .header-container {
+    background-color: #062c52;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+  }
+  
+  .logo img {
+    max-width: 8rem; /* Adjusted from px to rem for responsiveness */
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin-left: 2rem;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem; /* Use rem for font-size */
+  }
+  
+  
+
+
+
+
+
+
+
+/* First Section: Centered Text with Background Image */
+.hero-section {
+    background-image: url('./images/services.png'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay for contrast */
+    z-index: 1;
+}
+
+.hero-content {
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+}
+
+/* Second Section: Grid with Image, Heading, and Paragraph */
+.grid-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.grid-item h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.grid-item p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Adjust layout for smaller screens */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 60vh;
+    }
+    
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-item h1 {
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+/* Footer Section */
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 2rem 0;
+  }
+  
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Keep 4 columns even on smaller screens */
+    gap: 2rem;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .footer-section {
+    padding: 1rem;
+  }
+  
+  .footer-logo {
+    width: 10rem; /* Use rem units */
+    margin-bottom: 1.5rem;
+  }
+  
+  .footer-section p {
+    margin-bottom: 1rem;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .footer-section ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    background-color: #1e63bf; /* Blue bottom bar */
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+  }
+  
+  .footer-bottom p {
+    color: #ffffff;
+    font-size: 0.875rem; /* Responsive font-size using rem */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-container {
+      grid-template-columns: repeat(4, 1fr); /* Maintain 4 columns even on smaller screens */
+      gap: 1rem; /* Adjust the gap slightly for smaller screens */
+      padding: 1rem;
+    }
+  }
+  
