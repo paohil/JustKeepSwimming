@@ -355,7 +355,7 @@ p {
   grid-template-columns: 1fr 1fr; /* Two columns */
   grid-template-rows: 1fr 1fr; /* Two rows */
   gap: 50px; /* Space between grid items */
-  height: 60vh; /* Full viewport height */
+  height: auto; /* Full viewport height */
   padding: 80px; /* Adjust padding as needed */
   box-sizing: border-box;
    max-width: 1000px;
